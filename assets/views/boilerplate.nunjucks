@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    {% block header %}
+        <header background="/bookbanner.jpg" class="row jumbotron">
+            <h1 class="col-sm-7">Banking App<br> <sub>Add, Remove or Transfer Money</sub></h1>
+            <nav class="col-sm-5">
+                    <ul class="nav navbar-nav">
+                        <li><a href="transfer">Transfer Funds</a></li>
+                        <li><a href="account-list">See Account</a></li>
+                        <li><a href="add-remove">Deposit or Withdraw</a></li>
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </nav>
+        </header>
+    {% endblock %}
+
+    {% block main %}
+
+    {% endblock %}
+
+    {% block footer %}
+            <footer class="row">
+                    <small class="col-sm-12 text-center">
+                        copyright &copy; 2018 Raul Ramirez all rights reserved.
+                    </small>
+            </footer> 
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends 'boilerplate.nunjucks' %}
+
+{% block main %}
+  {% block output %}
+  {% endblock %}
+
+    <main class="row block">
+
+        <h2 class="back text-center">Select Account</h2>
+
+        <!-- create a form to get user imput -->
+
+        <form action="" method="POST" class="col-sm-6 col-sm-offset-3">
+
+        <label for="account">Account: </label>
+
+        <input type="text" name="account" class="form-control">
+
+        <label for="amount">Amount: </label>
+
+        <input type="number" step="0.01" name="amount" class="form-control">
+
+          <input type="submit" class="btn btn-success" value="Deposit">
+
+          <input type="submit" class="btn btn-danger" value="Withdraw">
+
+        </form>
+
+    </main>
+
+{% endblock %}

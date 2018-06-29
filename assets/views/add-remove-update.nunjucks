@@ -1,0 +1,5 @@
+{% extends 'add-remove.nunjucks' %}
+
+{% block output %}
+  <p>Thank you for making a new account! Your new account name is {{account}} with ${{amount}}. </p>
+{% endblock %}

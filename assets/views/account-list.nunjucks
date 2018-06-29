@@ -1,0 +1,15 @@
+{% extends 'boilerplate.nunjucks' %}
+
+    {% block main %}
+
+            <h2 class="col-sm-12">See your Accounts</h2>
+    {% for item in data %}
+
+    <h2>Account Name: {{item.account}}</h2>
+    <h2>Account Balance: ${{item.amount}}</h2>
+
+    {% endfor %}
+
+    
+
+    {% endblock %}
